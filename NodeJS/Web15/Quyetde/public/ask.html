@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Hoi nhanh</title>
+</head>
+<body onload="onLoad()">
+    <nav>
+        <ul>
+            <li><a href="/ask">Hoi nhanh</a></li>
+            <li><a href="/answer">Dap gon</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1 id="title">Make a question to reach an answer yes/true or no/false!</h1>
+        <form action="/createquestion" method="POST">
+            <textarea maxlength="200" name="questionContent" id="questionContent" cols="120" rows="7"></textarea> <br>
+            <span>con <span id="remain"></span>/200 ki tu</span>
+            <!-- <input type="submit" value="Submit"> -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

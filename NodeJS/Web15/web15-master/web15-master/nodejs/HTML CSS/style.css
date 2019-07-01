@@ -1,0 +1,52 @@
+p {
+    background: #aaeebb;
+    background-image: url('https://image.lag.vn/upload/news/18/09/16/Untitled_RAEM.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+#top {
+    font-size: 25px;
+}
+
+[type='text'] {
+    border: 2px solid #990000;
+}
+
+.text-red:hover {
+    font-size: 40px;
+}
+
+ul li {
+    font-style: italic;
+}
+
+ul > li {
+    color: #990000;
+}
+
+ol li {
+    color: #aaeebb;
+}
+
+h1#top {
+    background: #ff0000;
+}
+
+img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img:hover {
+    transform: scale(2);
+    /* transform: translate(-50%, -50%); */
+}

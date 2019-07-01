@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="js/SignIn.js"></script>
+    <script src="js/SignUp.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="loadWebFunction()">
+    <div id="navbar">
+
+        <nav class="navbar navbar-inverse " id="navbar-fixed"
+            style="padding-left:10%; padding-right:10%; width:100%; z-index:1000; position:fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">MrProfessor.vn</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Trang chủ</a></li>
+                    <li><a href="/admin" id="btn-admin" hidden>ADMIN</a></li>
+                    <li><a href="#">Page 2</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="ul-navbar">
+                    <li><a href="#" data-toggle="modal" data-target="#signUpForm" id="btn-menu-signup"><span
+                                class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#signInForm" id="btn-menu-signin"><span
+                                class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="ul-user-info" hidden>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span id="navbar-username"></span>
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sửa thông tin</a></li>
+                            <li><a href="#">Đổi mật khẩu</a></li>
+                            <li><a href="" id="btn-signout">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="navbar">
+
+        </div>
+    </div>
+
+    <div id="signUpForm" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Đăng ký</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="email">Họ và tên:</label>
+                        <input type="text" class="form-control" id="input-fullname-signup">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tên đăng nhập:</label> <span id="input-username-status">*</span>
+                        <input type="text" class="form-control" id="input-username-signup"
+                            onkeyup="validateUsernameSignUp()">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Mật khẩu:</label> <span id="input-password-status">*</span>
+                        <input type="password" class="form-control" id="input-password-signup"
+                            onkeyup="validatePasswordSignUp()">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Nhập lại mật khẩu:</label><span id="re-input-password-status">*</span>
+                        <input type="password" class="form-control" id="re-input-password-signup"
+                            onkeyup="validateRepasswordSignUp()">
+                    </div>
+                    <button type="button" class="btn btn-default" id="btn-sign-up" disabled>Đăng ký</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="signInForm" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Đăng nhập</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="email">Tên đăng nhập:</label> <span id="input-username-status-in">*</span>
+                        <input type="text" class="form-control" id="input-username-signin"
+                            onkeyup="validateUsernameSignIn()">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Mật khẩu:</label> <span id="input-password-status-in">*</span>
+                        <input type="password" class="form-control" id="input-password-signin"
+                            onkeyup="validatePasswordSignIn()">
+                    </div>
+                    <button type="button" class="btn btn-default" id="btn-sign-in" disabled>Đăng nhập</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="main" style="padding-left:50px; padding-right:50px">
+        <div class="row">
+            <div id="this-item" class="col-sm-8" style="padding:10px">
+
+            </div>
+            <div id="list-item" class="col-sm-4" style="padding-top:10px">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

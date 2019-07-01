@@ -1,0 +1,38 @@
+.menu{
+    background:#D5B0AC;
+    color:#402E;
+    font-weight:bold;
+    text-align: center;
+}
+.sub-menu{
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+}
+.sub-menu:hover{
+    color:white;
+    background-color:#9CD08F;
+    cursor: pointer;
+}
+.menu_vertical{
+    text-align: center;
+    color:#402E;
+    font-weight:bold;
+    background: transparent;
+}
+.sec-sub-menu{
+    display: block;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    background-color: #D5B0AC;
+    color:#402E2A;
+    border: 1px solid white;
+}
+
+.sec-sub-menu:hover{
+    color:white;
+    background-color:#9CD08F;
+    cursor: pointer;
+}

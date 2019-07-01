@@ -1,0 +1,77 @@
+html,
+div{
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.781);
+    height: 40px;
+    /* line-height: 40px; */
+}
+.link:hover{
+    background-color: black;
+    color: white;
+}
+.web-name {
+    font-size: 20px;
+}
+.link {
+    font-size: 15px;
+}
+.sub-web {
+    background-color: rgba(0, 0, 0, 0.781);
+    height: 40px;
+    color:rgba(255, 255, 255, 0.582);
+}
+.main{
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+}
+.btn-submit{
+    background-color: blueviolet;
+    color:white;
+}
+.btn-submit:hover{
+    background-color: white;
+    color:blueviolet;
+}
+.leftside{
+    float: left;
+    width: 20%;
+    background-color: black;
+    height: 100%;
+}
+.ques-content{
+    font-size: 50px;
+    font-weight: bold;
+}
+.div-content{
+    border: 1px solid black;
+    height: 150px;
+    text-align: center;
+}
+.btn-answer{
+    height: 30px;
+    width: 200px;
+    color:white;
+}
+.div-answer{
+    text-align: center;
+}
+.div-question{
+    text-align:center;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+}
+.btn:hover{
+    background-color: red;
+    color:white;
+}
+.btn-yes{
+    background-color: blue;
+}
+.btn-no{
+    background-color:red;
+}

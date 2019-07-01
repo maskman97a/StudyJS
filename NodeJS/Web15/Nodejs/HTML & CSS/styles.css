@@ -1,0 +1,72 @@
+p{
+    background: #f5cfcf;
+}
+div{
+    border: 1px solid black;
+    background:greenyellow;   
+}
+form{
+    background:pink;
+}
+.text-red{
+    color: red;
+}
+.text-green{
+    color: green;
+}
+.text-yellow{
+    color: yellow;
+}
+.text-pink{
+    color: pink;
+}
+.text-purple{
+    color: purple;
+}
+.text-blue{
+    color:blue;
+}
+.text-italic{
+    font-style: italic;
+}
+.image{
+    border-radius: 100%;
+
+}
+.image:hover {
+    zoom: 2;
+    cursor: zoom-in;
+    
+}
+
+[type="submit"]{
+    border:2px solid black;
+}
+table tr td {
+    border:1px solid blue;
+    padding: 10px;
+}
+.menu{
+    text-align: center;
+    height: 30px;
+    background-color: #D5B0AC;
+    color:#402E2A;
+    padding-top:7px;
+}
+span{
+    box-sizing: border-box;
+}
+.sub-menu{
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-bottom: 12px;
+    padding-top:7px;
+}
+.sub-menu:hover{
+    color:white;
+    background-color:#9CD08F;
+    cursor: pointer;
+}

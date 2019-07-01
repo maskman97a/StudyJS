@@ -1,0 +1,16 @@
+<div class="main">
+    <div class="div-content"><p class="ques-content">{{question.content}}</p></div>
+
+    <div class="div-answer">
+        <a href="/answer/{{question.id}}/no"><button class="btn-no btn-answer">Không / Sai</button></a>
+        <a href="/answer/{{question.id}}/yes"><button class="btn-yes btn-answer">Có / Đúng</button></a>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="div-question">
+        <a href="/question/{{question.id}}"><button class="btn">Kết quả</button></a>
+        <a href="/"><button class="btn">Câu hỏi khác</button></a>
+    </div>
+</div>

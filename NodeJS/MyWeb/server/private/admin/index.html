@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="../css/all.min.css"> -->
+    <link rel="stylesheet" href="../css/all.css">
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="js/admin.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="loadWebFunction()">
+    <div style="padding:10px">
+        <a href="/"><button class="fa fa-home">Trang chủ</button></a>
+    </div>
+    <h1>This is admin page!</h1>
+    <table>
+        <tr>
+            <td>
+                <button onclick="showFormAddItem()" class="btn">Thêm sản phẩn</button>
+            </td>
+            <td>
+                <button onclick="showItemList()" class="btn">Danh sách sản phẩm</button>
+            </td>
+        </tr>
+    </table>
+    <div id="adminActionForm" style="border:1px solid black">
+        <div id="formAddItem" style="padding:10px;">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="input-itemName" placeholder="Tên sản phẩm" id="inp-item-name"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="input-itemLink" placeholder="Đường dẫn" id="inp-item-link">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="input-author" placeholder="Tác giả" id="inp-author">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="10" id="input-description"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Thêm" id='add-item-btn'>
+                        <span id="add-item-status"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="div-table-list-item" hidden>
+            <table id="table-list-item" border="1" width="100%">
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

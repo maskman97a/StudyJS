@@ -1,0 +1,35 @@
+.menu{
+    background:pink;
+    text-align: center;
+}
+nav span{
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    color:green;
+    line-height: 30px;
+    position: relative;
+}
+span:hover{
+    color:white;
+    background:blue;
+}
+span:hover > .sub-menu{
+    cursor: pointer;
+    color:white;
+    display: block;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+}
+.sub-menu span{
+    display:block;
+}
+.sub-menu .sub-menu{
+    top:0;
+    left:102px;
+}
+
